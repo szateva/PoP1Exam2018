@@ -1,3 +1,11 @@
+""" Integer multiplication can be performed using the idea of repeated addition. For a
+positive integer n:
+m * n = m * (n-1) + m
+m * 0 = 0
+Write a recursive function multiply(m, n), which multiplies m by n using repeated
+addition. Do not use the multiplication operation \*" in your answer. """
+
+
 def multiply(m, n):
     if n == 0 or m == 0:
         return 0
