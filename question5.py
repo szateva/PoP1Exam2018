@@ -14,3 +14,23 @@ For example, for n = 5, the resulting array would have the following values:
 You should not simply assign to each element in the array but should utilise appropriate
 iteration constructs. """
 
+def matrix(n):
+    M = [[0] * n for i in range(n)]
+    for row in range(n):
+        for col in range(n):
+            if row < col:
+                M[row][col] = col - row
+            elif row > col:
+                M[row][col] = row - col
+            else:
+                M[row][col] = 0
+    return M
+
+def print_matrix(M):
+    for row in range(len(M)):
+        print(M[row])
+
+M = matrix(5)
+print_matrix(M)
+
+
