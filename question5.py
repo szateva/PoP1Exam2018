@@ -27,8 +27,10 @@ def matrix(n):
     return M
 
 def print_matrix(M):
-    for row in M:
-        print(row)
+    for row in range(len(M)):
+        print()
+        for col in range(len(M[row])):
+            print(M[row][col], end= " ")
 
 M = matrix(5)
 print_matrix(M)
